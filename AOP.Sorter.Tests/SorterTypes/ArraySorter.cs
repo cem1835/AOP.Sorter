@@ -9,7 +9,7 @@ namespace AOP.Sorter.Tests.SorterTypes
     public class ArraySorter
     {
         [TestMethod]
-        public void array_sorter_with_double()
+        public void array_sorter_with_int()
         {
             var testArray = new int[] { 4, 3, 2, 1 };
 
@@ -26,5 +26,6 @@ namespace AOP.Sorter.Tests.SorterTypes
         [OnValueSorterAspect]
         public int[] SortListInt(int[] array)
             => array;
+
     }
 }
